@@ -48,7 +48,6 @@ class Zombie:
         self.x = clamp(800, self.x, 1600)
         pass
 
-
     def draw(self):
         if self.dir < 0:
             Zombie.images['Walk'][int(self.frame)].composite_draw(0, 'h', self.x, self.y, 200, 200)
@@ -60,5 +59,4 @@ class Zombie:
         pass
 
     def handle_collision(self, group, other):
-        if group == 'zombie:ball':
-            game_world.remove_object(self)
+        pass
