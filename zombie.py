@@ -71,4 +71,6 @@ class Zombie:
                     self.y = 100
                 elif self.hp == 1:
                     game_world.remove_object(self)
+        elif group == 'zombie:boy':
+            game_framework.quit()
 
