@@ -68,6 +68,7 @@ class Zombie:
                     self.hp -= 1
                     self.size_y /= 2
                     self.size_x /= 2
+                    self.y = 100
                 elif self.hp == 1:
                     game_world.remove_object(self)
 
